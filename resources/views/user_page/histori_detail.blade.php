@@ -48,8 +48,8 @@
                                 </td>
                                 <td>{{ $transaction_detail->menu->namaMinum }}</td>
                                 <td>{{ $transaction_detail->jumlah_barang }} Minum</td>
-                                <td align="right">Rp. {{ number_format($transaction_detail->menu->harga) }}</td>
-                                <td align="right">Rp. {{ number_format($transaction_detail->jumlah_harga) }}</td>
+                                <td>Rp. {{ number_format($transaction_detail->menu->harga) }}</td>
+                                <td>Rp. {{ number_format($transaction_detail->jumlah_harga) }}</td>
 
                             </tr>
                             @endforeach
