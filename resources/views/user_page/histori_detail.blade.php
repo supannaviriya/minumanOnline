@@ -13,7 +13,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Detail Pemesanan</li>
                 </ol>
             </nav>
-        </div>dddddddddddddddd
+        </div>
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
@@ -47,7 +47,7 @@
                                     <img src="{{ asset('storage/'.$transaction_detail->menu->image) }}" width="100" alt="...">
                                 </td>
                                 <td>{{ $transaction_detail->menu->namaMinum }}</td>
-                                <td>{{ $transaction_detail->jumlah_barang }} kain</td>
+                                <td>{{ $transaction_detail->jumlah_barang }} Minum</td>
                                 <td align="right">Rp. {{ number_format($transaction_detail->menu->harga) }}</td>
                                 <td align="right">Rp. {{ number_format($transaction_detail->jumlah_harga) }}</td>
 
