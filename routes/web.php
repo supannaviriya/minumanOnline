@@ -23,6 +23,9 @@ Route::get('/home', function () {
 //register untuk admin dan user
 Route::get('/register', [mainController::class, 'register'])->middleware('guest');
 
+//nyimpen data untuk admin dan user
+Route::post('/register', [mainController::class, 'store']);
+
 //redirect ke page admin
 Route::get('/admin_page.home_admin',[mainController::class,'home_admin'])->middleware('auth');
 
@@ -35,8 +38,6 @@ Route::post('/login', [mainController::class, 'login_page']);
 //logout untuk admin dan user
 Route::post('/logout', [mainController::class, 'logout']);
 
-//nyimpen data untuk admin dan user
-Route::post('/register', [mainController::class, 'store']);
 
 Route::get('/menu_user',[mainController::class,'menu_user'])->middleware('auth');
 
