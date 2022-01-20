@@ -58,7 +58,7 @@
                         <p class="card-text">Rp. {{ number_format($data->harga, 0,'','.') }}</p>
 
                         <a href="/admin_page.edit_minum/{{$data['id']}}" class="btn btn-primary mt-0">Edit</a>
-                        <a href="delete_minum/{{$data['id']}}" class="btn btn-danger mt-0">Delete</a>
+                        <a href="/admin_page.delete_minum/{{$data['id']}}" class="btn btn-danger mt-0">Delete</a>
 
                     </div>
 

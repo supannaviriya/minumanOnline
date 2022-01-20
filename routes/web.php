@@ -40,7 +40,7 @@ Route::post('/register', [mainController::class, 'store']);
 
 Route::get('/menu_user',[mainController::class,'menu_user'])->middleware('auth');
 
-Route::get('delete_minum/{id}',[mainController::class,'delete_minum']);
+Route::get('admin_page.delete_minum/{id}',[mainController::class,'delete_minum']);
 
 //admin_page
 Route::get('/admin_page.list_minuman',[mainController::class,'list_minuman']);
