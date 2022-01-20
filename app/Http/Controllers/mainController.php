@@ -44,7 +44,7 @@ $validatedData['password'] = bcrypt($validatedData['password']);
 User::create($validatedData);
 $request->session()->flash('success', 'Registrastion Success! Login now...');
 
-return redirect('/home');
+return redirect('home');
 
 }
 
